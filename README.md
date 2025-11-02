@@ -152,7 +152,7 @@ Endpoint réservé aux utilisateurs avec le rôle "Admin".
    ```
 
 5. **Accéder à Swagger**
-   - En mode développement: `https://localhost:5001/swagger`
+   - En mode développement: `https://localhost:7264/swagger`
    - L'application démarrera automatiquement Swagger UI
 
 ## Utilisation avec Swagger
@@ -167,14 +167,14 @@ Endpoint réservé aux utilisateurs avec le rôle "Admin".
 
 ### Se connecter
 ```bash
-curl -X POST "https://localhost:5001/api/auth/login" \
+curl -X POST "https://localhost:7264/api/auth/login" \
   -H "Content-Type: application/json" \
   -d '{"username":"admin","password":"password"}'
 ```
 
 ### Accéder à un endpoint protégé
 ```bash
-curl -X GET "https://localhost:5001/api/secure/profile" \
+curl -X GET "https://localhost:7264/api/secure/profile" \
   -H "Authorization: Bearer {votre_token}"
 ```
 
